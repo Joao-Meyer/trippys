@@ -1,0 +1,14 @@
+export { default as HomeFirstSectionBeforeImage } from './home-first-section-before.png';
+export { default as HomeFirstSectionAfterImage } from './home-first-section-after.png';
+export { default as CalvinPresentationImage } from './calvin-presentation.png';
+export { default as HomeFooterImage } from './home-footer.svg';
+export { default as HomeNFT1Image } from './home-nft-1.png';
+export { default as HomeNFT2Image } from './home-nft-2.png';
+export { default as HomeNFT3Image } from './home-nft-3.png';
+export { default as HomeNFT4Image } from './home-nft-4.png';
+export { default as HomeNFT5Image } from './home-nft-5.png';
+export { default as HomeNFT6Image } from './home-nft-6.png';
+export { default as HomeNFT7Image } from './home-nft-7.png';
+export { default as ButtonDiscordImage } from './button-discord.png';
+export { default as ButtonXImage } from './button-x.png';
+export { default as ScrollDownImage } from './scroll-down.png';

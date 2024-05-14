@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Super Cool';
+  font-style: normal;
+  font-weight: 500;
+  src:
+    local('Super Cool'),
+    url('./assets/Super-Cool.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 900;
+  src:
+    local('Outfit'),
+    url('./assets/Outfit-Black.woff2') format('woff');
+}
+
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local('Outfit'),
+    url('./assets/Outfit-Bold.woff2') format('woff');
+}
+
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 800;
+  src:
+    local('Outfit'),
+    url('./assets/Outfit-ExtraBold.woff2') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 200;
+  src:
+    local('Outfit'),
+    url('./assets/Outfit-ExtraLight.woff2') format('woff');
+}
+
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 300;
+  src:
+    local('Outfit'),
+    url('./assets/Outfit-Light.woff2') format('woff');
+}
+
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 500;
+  src:
+    local('Outfit'),
+    url('./assets/Outfit-Medium.woff2') format('woff');
+}
+
+
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local('Outfit'),
+    url('./assets/Outfit-Regular.woff2') format('woff');
+}
+
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  src:
+    local('Outfit'),
+    url('./assets/Outfit-SemiBold.woff2') format('woff');
+}
+
+@font-face {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 100;
+  src:
+    local('Outfit'),
+    url('./assets/Outfit-Thin.woff2') format('woff');
+}
+
+* {
+  font-family: 'Outfit';
+}
+
+h1, h2, h3 {
+  font-family: 'Super Cool';
+}
