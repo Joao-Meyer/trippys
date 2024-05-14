@@ -17,11 +17,20 @@ import {
 import { type FC, useEffect, useState } from 'react';
 
 export const AuthTemplate: FC = () => {
-  const [showFirstImage, setShowFirstImage] = useState<boolean>(true);
+  const [firstAnimation, setFirstAnimation] = useState<boolean>(true);
+  const [secondAnimation, setSecondAnimation] = useState<boolean>(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setShowFirstImage(false);
+      setFirstAnimation(false);
+    }, 500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setSecondAnimation(false);
     }, 1000);
 
     return () => clearTimeout(timer);
@@ -36,30 +45,33 @@ export const AuthTemplate: FC = () => {
       />
 
       <div
-        className={`min-w-[1920px] h-[2404px] z-0 absolute transition-all duration-1000 ${showFirstImage ? 'opacity-0' : 'opacity-100'}`}
+        className={`min-w-[1920px] h-[2404px] z-0 absolute transition-all duration-1000 ${firstAnimation ? 'opacity-0' : 'opacity-100'}`}
         style={{
-          background: 'linear-gradient(to bottom, #00000040 1080px, #00000000 1480px)'
+          background: 'linear-gradient(to bottom, #00000066 1080px, #00000000 1480px)'
         }}
       />
 
       <div className={'h-[2404px] w-[100%] relative flex flex-col  items-center'}>
         <div className={'flex flex-col w-[100%] h-[100vh] max-h-[1080px] max-w-[1920px] relative'}>
-          <div className={'flex flex-col absolute top-0 left-0 ml-[200px] mt-[120px]'}>
-            <p className={'font-superCool leading-[1.5] text-[60px] text-[#FCFC03]'}>Welcome to</p>
-            <p className={'font-superCool leading-[1.5] text-[180px] text-[#FCFC03]'}>Trippys</p>
+          <div
+            className={`flex flex-col absolute top-0 ml-[200px] mt-[120px] transition-transform duration-1000 transform ${firstAnimation ? '-translate-x-[1000px]' : 'translate-x-0'}`}
+          >
+            <p className={'font-superCool leading-[1.25] text-[60px] text-[#FCFC03]'}>Welcome to</p>
+
+            <p className={'font-superCool leading-[1.25] text-[180px] text-[#FCFC03] uppercase'}>
+              Trippys
+            </p>
           </div>
 
           <div
-            className={'flex flex-col gap-[20px] absolute bottom-[80px] ml-[200px] items-center'}
+            className={`flex flex-col gap-[20px] absolute bottom-[80px] ml-[200px] items-center transition-transform duration-1000 transform ${secondAnimation ? '-translate-x-[500px]' : 'translate-x-0'}`}
           >
             <img alt={'Scroll Down'} src={ScrollDownImage} />
-            <p className={'text-[#FCFC03] text-[20px]'}>Scroll</p>
+            <p className={'text-[#FCFC03] text-[20px] font-[500] font-orbitron'}>Scroll</p>
           </div>
 
           <div
-            className={
-              'flex flex-col absolute right-[40px] mt-[40px] h-[calc(100%-80px)] justify-between items-end'
-            }
+            className={`flex flex-col absolute right-[40px] mt-[40px] h-[calc(100%-80px)] justify-between items-end transition-opacity duration-1000 ${secondAnimation ? 'opacity-0' : 'opacity-100'}`}
           >
             <svg
               className={'transform-none origin-[50% 50%] cursor-none max-h-none'}
@@ -130,9 +142,7 @@ export const AuthTemplate: FC = () => {
           </div>
 
           <p
-            className={
-              'absolute w-full text-center bottom-[30px] text-[#FCFC03] font-[600] uppercase'
-            }
+            className={`absolute w-full text-center bottom-[30px] text-[#FCFC03] font-[500] uppercase font-orbitron transition-opacity duration-1000 transform ${secondAnimation ? 'opacity-0' : 'opacity-100'}`}
           >
             Trippys on Blast
           </p>

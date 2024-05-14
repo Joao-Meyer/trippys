@@ -38,7 +38,6 @@
     url('./assets/Outfit-ExtraBold.woff2') format('woff');
 }
 
-
 @font-face {
   font-family: 'Outfit';
   font-style: normal;
@@ -66,7 +65,6 @@
     url('./assets/Outfit-Medium.woff2') format('woff');
 }
 
-
 @font-face {
   font-family: 'Outfit';
   font-style: normal;
@@ -92,6 +90,60 @@
   src:
     local('Outfit'),
     url('./assets/Outfit-Thin.woff2') format('woff');
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 900;
+  src:
+    local('Orbitron'),
+    url('./assets/Orbitron-Black.woff2') format('woff');
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local('Orbitron'),
+    url('./assets/Orbitron-Bold.woff2') format('woff');
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 800;
+  src:
+    local('Orbitron'),
+    url('./assets/Orbitron-ExtraBold.woff2') format('woff');
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 500;
+  src:
+    local('Orbitron'),
+    url('./assets/Orbitron-Medium.woff2') format('woff');
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local('Orbitron'),
+    url('./assets/Orbitron-Regular.woff2') format('woff');
+}
+
+@font-face {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 600;
+  src:
+    local('Orbitron'),
+    url('./assets/Orbitron-SemiBold.woff2') format('woff');
 }
 
 * {

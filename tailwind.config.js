@@ -38,7 +38,8 @@ export default {
       }
     },
     fontFamily: {
-      superCool: ['Super Cool']
+      superCool: ['Super Cool'],
+      orbitron: ['Orbitron']
     },
     screens: {
       desktop: '1281px',
