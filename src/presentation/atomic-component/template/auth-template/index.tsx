@@ -76,7 +76,7 @@ export const AuthTemplate: FC = () => {
           />
 
           <div
-            className={`flex flex-col items-center tablet:items-start tablet:absolute top-0 tablet:ml-[200px] mt-[120px] transition-transform duration-1000 transform ${firstAnimation ? '-translate-x-[1000px]' : 'translate-x-0'}`}
+            className={`flex flex-col items-center tablet:items-start tablet:absolute top-0 tablet:ml-[200px] mt-[80px] tablet:mt-[120px] transition-transform duration-1000 transform ${firstAnimation ? '-translate-x-[1000px]' : 'translate-x-0'}`}
           >
             <p
               className={
@@ -96,7 +96,7 @@ export const AuthTemplate: FC = () => {
           </div>
 
           <div
-            className={`flex flex-col tablet:absolute tablet:right-[40px] mt-[40px] tablet:h-[calc(100%-80px)] justify-between items-center tablet:items-end transition-opacity duration-1000 ${secondAnimation ? 'opacity-0' : 'opacity-100'}`}
+            className={`flex flex-col tablet:absolute tablet:right-[40px] mt-[60px] tablet:h-[calc(100%-80px)] justify-between items-center tablet:items-end transition-opacity duration-1000 ${secondAnimation ? 'opacity-0' : 'opacity-100'}`}
           >
             <svg
               className={'hidden tablet:block'}
@@ -159,7 +159,7 @@ export const AuthTemplate: FC = () => {
           </div>
 
           <div
-            className={`flex flex-col gap-[10px] tablet:gap-[20px] mt-[100px] tablet:mt-0 tablet:absolute tablet:bottom-[80px] tablet:ml-[200px] items-center transition-transform duration-1000 transform ${secondAnimation ? '-translate-x-[500px]' : 'translate-x-0'}`}
+            className={`w-full flex flex-col gap-[10px] tablet:gap-[20px] tablet:mt-0 absolute bottom-[80px] tablet:bottom-[80px] tablet:ml-[200px] items-center transition-transform duration-1000 transform ${secondAnimation ? '-translate-x-[500px]' : 'translate-x-0'}`}
           >
             <div
               className={
@@ -206,7 +206,7 @@ export const AuthTemplate: FC = () => {
         }
       >
         <h2 className={'text-[#424242] text-[24px] tablet:text-[40px] uppercase'}>
-          Do you already know our avatar Calvin
+          Do you already know our avatar Calvin?
         </h2>
 
         <div
@@ -241,14 +241,14 @@ export const AuthTemplate: FC = () => {
 
       <div
         className={
-          'flex flex-col items-center bg-gradient-to-b from-[#2F2F2F] via-[#2F2F2F] to-[#000000] w-[100%] pt-[40px] mt-[200px]'
+          'flex flex-col items-center bg-gradient-to-b from-[#2F2F2F] via-[#2F2F2F] to-[#000000] w-[100%] pt-[40px] mt-[120px] tablet:mt-[200px]'
         }
       >
         <hr className={'w-[100px] border-[#FCFC03] border-[2px] radius-[40px] rounded-full'} />
 
         <div
           className={
-            'flex flex-col max-w-[320px] tablet:max-w-[1140px] pt-[160px] gap-[200px] pb-[220px]'
+            'flex flex-col max-w-[320px] tablet:max-w-[1140px] pt-[80px] tablet:pt-[160px] gap-[80px] tablet:gap-[200px] pb-[120px] tablet:pb-[220px]'
           }
         >
           <div className={'flex items-center flex-col gap-[40px] tablet:gap-[80px]'}>
