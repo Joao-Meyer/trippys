@@ -12,7 +12,8 @@ import {
   HomeNFT4Image,
   HomeNFT5Image,
   HomeNFT6Image,
-  HomeNFT7Image
+  HomeNFT7Image,
+  TabletHomeFirstSectionImage
 } from 'main/assets';
 import { IoChevronDownSharp } from 'react-icons/io5';
 import { useEffect, useState } from 'react';
@@ -42,56 +43,63 @@ export const AuthTemplate: FC = () => {
     <div className={'flex flex-col items-center overflow-x-hidden relative'}>
       <img
         alt={'Trippys on Blast'}
-        className={'min-w-[1920px] absolute -z-10 -top-[120px]'}
+        className={'hidden tablet:block min-w-[1920px] absolute -z-10 -top-[120px]'}
         src={HomeFirstSectionImage}
       />
 
       <div
-        className={`min-w-[1920px] h-[2404px] z-0 absolute transition-all duration-1000 ${firstAnimation ? 'opacity-0' : 'opacity-100'}`}
+        className={`hidden tablet:block min-w-[1920px] h-[2284px] z-0 absolute transition-all duration-1000 ${firstAnimation ? 'opacity-0' : 'opacity-100'}`}
         style={{
           background: 'linear-gradient(to bottom, #00000070 960px, #00000000 1360px)'
         }}
       />
 
-      <div className={'h-[2404px] w-[100%] relative flex flex-col  items-center'}>
+      <img
+        alt={'Trippys on Blast'}
+        className={'block tablet:hidden min-w-[1140px] absolute -z-10'}
+        src={TabletHomeFirstSectionImage}
+      />
+
+      <div
+        className={`block tablet:hidden min-w-[1140px] h-[1427px] z-0 absolute transition-all duration-1000 ${firstAnimation ? 'opacity-0' : 'opacity-100'}`}
+        style={{
+          background: 'linear-gradient(to bottom, #00000070 640px, #00000000 880px)'
+        }}
+      />
+
+      <div className={'h-[1427px] tablet:h-[2284px] w-[100%] relative flex flex-col items-center'}>
         <div className={'flex flex-col w-[100%] h-[100vh] max-h-[1080px] max-w-[1920px] relative'}>
           <img
             alt={'Calvin head'}
-            className={'absolute top-[30px] left-[60px]'}
+            className={`hidden tablet:block absolute top-[30px] left-[60px] transition-all duration-1000 ${secondAnimation ? 'opacity-0' : 'opacity-100'}`}
             src={CalvinHeadImage}
           />
 
           <div
-            className={`flex flex-col absolute top-0 ml-[200px] mt-[120px] transition-transform duration-1000 transform ${firstAnimation ? '-translate-x-[1000px]' : 'translate-x-0'}`}
+            className={`flex flex-col items-center tablet:items-start tablet:absolute top-0 tablet:ml-[200px] mt-[120px] transition-transform duration-1000 transform ${firstAnimation ? '-translate-x-[1000px]' : 'translate-x-0'}`}
           >
-            <p className={'font-superCool leading-[1.25] text-[60px] text-[#FCFC03]'}>Welcome to</p>
+            <p
+              className={
+                'font-superCool leading-[1.25] text-[32px] tablet:text-[60px] text-[#FCFC03] drop-shadow-[0px_5px_2px_#00000080]'
+              }
+            >
+              Welcome to
+            </p>
 
-            <p className={'font-superCool leading-[1.25] text-[180px] text-[#FCFC03] uppercase'}>
+            <p
+              className={
+                'font-superCool leading-[1.25] text-[80px] tablet:text-[180px] text-[#FCFC03] uppercase drop-shadow-[0px_5px_2px_#00000080] tablet:drop-shadow-[0px_10px_2px_#00000080]'
+              }
+            >
               Trippys
             </p>
           </div>
 
           <div
-            className={`flex flex-col gap-[20px] absolute bottom-[80px] ml-[200px] items-center transition-transform duration-1000 transform ${secondAnimation ? '-translate-x-[500px]' : 'translate-x-0'}`}
-          >
-            <div
-              className={
-                'relative w-[72px] h-[120px] flex flex-col items-center border-[4px] border-[#FCFC03]'
-              }
-            >
-              <IoChevronDownSharp
-                className={'absolute text-[#FCFC03] animate-float-up-down'}
-                size={'48px'}
-              />
-            </div>
-
-            <p className={'text-[#FCFC03] text-[20px] font-[500] font-orbitron'}>Scroll</p>
-          </div>
-
-          <div
-            className={`flex flex-col absolute right-[40px] mt-[40px] h-[calc(100%-80px)] justify-between items-end transition-opacity duration-1000 ${secondAnimation ? 'opacity-0' : 'opacity-100'}`}
+            className={`flex flex-col tablet:absolute tablet:right-[40px] mt-[40px] tablet:h-[calc(100%-80px)] justify-between items-center tablet:items-end transition-opacity duration-1000 ${secondAnimation ? 'opacity-0' : 'opacity-100'}`}
           >
             <svg
+              className={'hidden tablet:block'}
               fill={'none'}
               height={'124'}
               viewBox={'0 0 124 124'}
@@ -108,7 +116,7 @@ export const AuthTemplate: FC = () => {
               />
             </svg>
 
-            <div className={'flex flex-col gap-[20px] items-center'}>
+            <div className={'flex flex-row tablet:flex-col gap-[20px] items-center'}>
               <a
                 aria-labelledby={'Twitter'}
                 href={'https://twitter.com/TrippysNFT'}
@@ -129,6 +137,7 @@ export const AuthTemplate: FC = () => {
             </div>
 
             <svg
+              className={'hidden tablet:block'}
               fill={'none'}
               height={'165'}
               viewBox={'0 0 124 165'}
@@ -149,8 +158,26 @@ export const AuthTemplate: FC = () => {
             </svg>
           </div>
 
+          <div
+            className={`flex flex-col gap-[10px] tablet:gap-[20px] mt-[100px] tablet:mt-0 tablet:absolute tablet:bottom-[80px] tablet:ml-[200px] items-center transition-transform duration-1000 transform ${secondAnimation ? '-translate-x-[500px]' : 'translate-x-0'}`}
+          >
+            <div
+              className={
+                'relative w-[54px] h-[90px] tablet:w-[72px] tablet:h-[120px] flex flex-col items-center border-[2px] tablet:border-[4px] border-[#FCFC03]'
+              }
+            >
+              <IoChevronDownSharp
+                className={
+                  'absolute text-[#FCFC03] animate-tablet-float-up-down tablet:animate-float-up-down w-[36px] h-[36px] tablet:w-[48px] tablet:h-[48px]'
+                }
+              />
+            </div>
+
+            <p className={'text-[#FCFC03] text-[20px] font-[500] font-orbitron'}>Scroll</p>
+          </div>
+
           <p
-            className={`absolute w-full text-center bottom-[30px] text-[#FCFC03] font-[600] uppercase font-orbitron transition-opacity duration-1000 transform ${secondAnimation ? 'opacity-0' : 'opacity-100'}`}
+            className={`hidden tablet:block absolute w-full text-center bottom-[30px] text-[#FCFC03] font-[600] uppercase font-orbitron transition-opacity duration-1000 transform ${secondAnimation ? 'opacity-0' : 'opacity-100'}`}
           >
             Trippys on Blast
           </p>
@@ -158,7 +185,7 @@ export const AuthTemplate: FC = () => {
 
         <h2
           className={
-            'absolute w-[1140px] text-right text-[40px] text-[#FFFFFF] top-[calc(1580px-120px)]'
+            'absolute w-[320px] tablet:w-[1140px] text-right text-[24px] tablet:text-[40px] text-[#FFFFFF] top-[979px] tablet:top-[1460px]'
           }
         >
           ... The collection that will accompany you on your travels
@@ -166,20 +193,32 @@ export const AuthTemplate: FC = () => {
 
         <h2
           className={
-            'absolute w-[1140px] text-left text-[40px] text-[#FFFFFF] top-[calc(2100px-120px)]'
+            'absolute w-[320px] tablet:w-[1140px] text-left text-[24px] tablet:text-[40px] text-[#FFFFFF] top-[1167px] tablet:top-[1980px]'
           }
         >
           And in your wallet ...
         </h2>
       </div>
 
-      <div className={'max-w-[1140px] flex flex-col mt-[200px]'}>
-        <h2 className={'text-[#424242] text-[40px] uppercase'}>
+      <div
+        className={
+          'max-w-[320px] tablet:max-w-[1140px] flex flex-col mt-[156px] gap-[40px] tablet:gap-[80px]'
+        }
+      >
+        <h2 className={'text-[#424242] text-[24px] tablet:text-[40px] uppercase'}>
           Do you already know our avatar Calvin
         </h2>
 
-        <div className={'flex gap-[160px] py-10 mx-auto max-w-[1140px]'}>
-          <p className={'text-[#424242] text-justify text-[20px] leading-[1.5] font-[500]'}>
+        <div
+          className={
+            'flex flex-col-reverse tablet:flex-row gap-[40px] tablet:gap-[160px] tablet:max-w-[1140px]'
+          }
+        >
+          <p
+            className={
+              'text-[#424242] text-justify text-[16px] tablet:text-[20px] leading-[1.5] font-[500]'
+            }
+          >
             Meet Calvin, the chill NFT Avatar! With his laid-back vibe, slightly squinted eyes, and
             a serene smile, Calvin is all about that carefree, no-worries attitude. He's totally
             into Reggae, Hippies, and everything from the Woodstock era.
@@ -194,7 +233,7 @@ export const AuthTemplate: FC = () => {
 
           <img
             alt={'Road trip illustration with a van, mountains, and text about travel'}
-            className={'w-[400px] h-[400px]'}
+            className={'w-[320px] tablet:w-[400px] h-[320px] tablet:h-[400px]'}
             src={CalvinPresentationImage}
           />
         </div>
@@ -207,51 +246,91 @@ export const AuthTemplate: FC = () => {
       >
         <hr className={'w-[100px] border-[#FCFC03] border-[2px] radius-[40px] rounded-full'} />
 
-        <div className={'flex flex-col max-w-[1140px] pt-[160px] gap-[200px] pb-[220px]'}>
-          <div className={'flex items-center flex-col gap-[80px]'}>
-            <h2 className={'text-[#FCFC03] text-[40px] text-right w-[100%]'}>
+        <div
+          className={
+            'flex flex-col max-w-[320px] tablet:max-w-[1140px] pt-[160px] gap-[200px] pb-[220px]'
+          }
+        >
+          <div className={'flex items-center flex-col gap-[40px] tablet:gap-[80px]'}>
+            <h2 className={'text-[#FCFC03] text-[24px] tablet:text-[40px] text-right w-[100%]'}>
               Just trip, what else?
             </h2>
 
-            <p className={'text-[20px] text-[#FFFFFF] font-[500] text-justify leading-[1.5]'}>
+            <p
+              className={
+                'text-[16px] tablet:text-[20px] text-[#FFFFFF] font-[500] text-justify leading-[1.5]'
+              }
+            >
               Trippys NFT is about fun and good vibes, always trying to hit a laugh and sometimes
               reflections. Let's wander through what imagination, the unspeakable and maybe a little
               bit of psychoactives can show us with the stylish collection pieces. Have fun!!
             </p>
 
-            <div className={'flex flex-row gap-[120px]'}>
-              <img alt={''} className={'w-[400px] h-[400px]'} src={HomeNFT1Image} />
+            <div className={'flex flex-col tablet:flex-row gap-[40px] tablet:gap-[120px]'}>
+              <img
+                alt={'Trippys NFT'}
+                className={'w-[320px] tablet:w-[400px] h-[320px] tablet:h-[400px]'}
+                src={HomeNFT1Image}
+              />
 
-              <div className={'flex flex-col justify-between'}>
-                <div className={'flex flex-row gap-[40px]'}>
-                  <img alt={''} src={HomeNFT2Image} />
-                  <img alt={''} src={HomeNFT3Image} />
-                  <img alt={''} src={HomeNFT4Image} />
-                </div>
+              <div className={'flex flex-row flex-wrap gap-[40px]'}>
+                <img
+                  alt={'Trippys NFT'}
+                  className={'w-[140px] tablet:w-[180px] h-[140px] tablet:h-[180px]'}
+                  src={HomeNFT2Image}
+                />
 
-                <div className={'flex flex-row gap-[40px]'}>
-                  <img alt={''} src={HomeNFT5Image} />
-                  <img alt={''} src={HomeNFT6Image} />
-                  <img alt={''} src={HomeNFT7Image} />
-                </div>
+                <img
+                  alt={'Trippys NFT'}
+                  className={'w-[140px] tablet:w-[180px] h-[140px] tablet:h-[180px]'}
+                  src={HomeNFT3Image}
+                />
+
+                <img
+                  alt={'Trippys NFT'}
+                  className={'w-[140px] tablet:w-[180px] h-[140px] tablet:h-[180px]'}
+                  src={HomeNFT4Image}
+                />
+
+                <img
+                  alt={'Trippys NFT'}
+                  className={'w-[140px] tablet:w-[180px] h-[140px] tablet:h-[180px]'}
+                  src={HomeNFT5Image}
+                />
+
+                <img
+                  alt={'Trippys NFT'}
+                  className={'w-[140px] tablet:w-[180px] h-[140px] tablet:h-[180px]'}
+                  src={HomeNFT6Image}
+                />
+
+                <img
+                  alt={'Trippys NFT'}
+                  className={'w-[140px] tablet:w-[180px] h-[140px] tablet:h-[180px]'}
+                  src={HomeNFT7Image}
+                />
               </div>
             </div>
           </div>
 
           <div className={'flex flex-col gap-[80px]'}>
-            <h2 className={'text-[#FFFFFF] text-[40px] text-center'}>
+            <h2 className={'text-[#FFFFFF] text-[24px] tablet:text-[40px] text-center'}>
               Follow us on Twitter so you don't miss any updates and Set your NFT, until our next
               trip!
             </h2>
 
-            <div className={'flex justify-center md:justify-start gap-[40px]'}>
+            <div className={'flex justify-center md:justify-start gap-[20px] tablet:gap-[40px]'}>
               <a
                 aria-labelledby={'Twitter'}
                 href={'https://twitter.com/TrippysNFT'}
                 rel={'noreferrer'}
                 target={'_blank'}
               >
-                <img alt={'Twitter'} src={ButtonDiscordImage} />
+                <img
+                  alt={'Twitter'}
+                  className={'w-[50px] tablet:w-[64px] h-[50px] tablet:h-[64px]'}
+                  src={ButtonDiscordImage}
+                />
               </a>
 
               <a
@@ -260,14 +339,62 @@ export const AuthTemplate: FC = () => {
                 rel={'noreferrer'}
                 target={'_blank'}
               >
-                <img alt={'X'} src={ButtonXImage} />
+                <img
+                  alt={'X'}
+                  className={'w-[50px] tablet:w-[64px] h-[50px] tablet:h-[64px]'}
+                  src={ButtonXImage}
+                />
               </a>
             </div>
           </div>
         </div>
       </div>
 
-      <img alt={'Trippys on Blast'} className={'min-w-[1920px]'} src={HomeFooterImage} />
+      <div className={'flex flex-col items-center relative w-[100%] max-h-[1080px] max-w-[1920px]'}>
+        <img alt={'Trippys on Blast'} className={'w-[100%] h-full'} src={HomeFooterImage} />
+
+        <svg
+          className={'hidden tablet:block absolute left-[40px] bottom-[40px]'}
+          fill={'none'}
+          height={'124'}
+          viewBox={'0 0 124 124'}
+          width={'124'}
+          xmlns={'http://www.w3.org/2000/svg'}
+        >
+          <path
+            d={
+              'M122 122H63.6569C62.596 122 61.5786 121.579 60.8284 120.828L3.17157 63.1716C2.42143 62.4214 2 61.404 2 60.3431V2'
+            }
+            stroke={'#FCFC03'}
+            strokeLinecap={'square'}
+            strokeWidth={'4'}
+          />
+        </svg>
+
+        <p
+          className={`hidden tablet:block absolute w-full text-center bottom-[30px] text-[#FCFC03] font-[600] uppercase font-orbitron transition-opacity duration-1000 transform ${secondAnimation ? 'opacity-0' : 'opacity-100'}`}
+        >
+          Trippys on Blast
+        </p>
+
+        <svg
+          className={'hidden tablet:block absolute right-[40px] bottom-[40px]'}
+          fill={'none'}
+          height={'124'}
+          viewBox={'0 0 124 124'}
+          width={'124'}
+          xmlns={'http://www.w3.org/2000/svg'}
+        >
+          <path
+            d={
+              'M2 122H60.3431C61.404 122 62.4214 121.579 63.1716 120.828L120.828 63.1716C121.579 62.4214 122 61.404 122 60.3431V2'
+            }
+            stroke={'#FCFC03'}
+            strokeLinecap={'square'}
+            strokeWidth={'4'}
+          />
+        </svg>
+      </div>
     </div>
   );
 };

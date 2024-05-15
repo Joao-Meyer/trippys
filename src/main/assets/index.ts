@@ -1,4 +1,5 @@
 export { default as HomeFirstSectionImage } from './home-first-section.png';
+export { default as TabletHomeFirstSectionImage } from './tablet-home-first-section.png';
 export { default as CalvinPresentationImage } from './calvin-presentation.png';
 export { default as HomeFooterImage } from './home-footer.png';
 export { default as HomeNFT1Image } from './home-nft-1.png';

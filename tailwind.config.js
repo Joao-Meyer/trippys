@@ -40,10 +40,15 @@ export default {
         floatUpDown: {
           '0%, 100%': { top: 'calc(0% + 4px)' },
           '65%': { top: 'calc((100% - 48px) - 4px)' }
+        },
+        tabletFloatUpDown: {
+          '0%, 100%': { top: 'calc(0% + 3px)' },
+          '65%': { top: 'calc((100% - 36px) - 3px)' }
         }
       },
       animation: {
-        'float-up-down': 'floatUpDown 1.5s ease-in-out infinite'
+        'float-up-down': 'floatUpDown 1.5s ease-in-out infinite',
+        'tablet-float-up-down': 'tabletFloatUpDown 1.5s ease-in-out infinite'
       }
     },
     fontFamily: {
