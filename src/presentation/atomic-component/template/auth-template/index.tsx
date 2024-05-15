@@ -43,12 +43,12 @@ export const AuthTemplate: FC = () => {
     <div className={'flex flex-col items-center overflow-x-hidden relative'}>
       <img
         alt={'Trippys on Blast'}
-        className={'hidden tablet:block min-w-[1920px] absolute -z-10 -top-[120px]'}
+        className={'hidden laptop:block min-w-[1920px] absolute -z-10 -top-[120px]'}
         src={HomeFirstSectionImage}
       />
 
       <div
-        className={`hidden tablet:block min-w-[1920px] h-[2284px] z-0 absolute transition-all duration-1000 ${firstAnimation ? 'opacity-0' : 'opacity-100'}`}
+        className={`hidden laptop:block min-w-[1920px] h-[2284px] z-0 absolute transition-all duration-1000 ${firstAnimation ? 'opacity-0' : 'opacity-100'}`}
         style={{
           background: 'linear-gradient(to bottom, #00000070 960px, #00000000 1360px)'
         }}
@@ -56,31 +56,31 @@ export const AuthTemplate: FC = () => {
 
       <img
         alt={'Trippys on Blast'}
-        className={'block tablet:hidden min-w-[1140px] absolute -z-10'}
+        className={'block laptop:hidden min-w-[1140px] absolute -z-10'}
         src={TabletHomeFirstSectionImage}
       />
 
       <div
-        className={`block tablet:hidden min-w-[1140px] h-[1427px] z-0 absolute transition-all duration-1000 ${firstAnimation ? 'opacity-0' : 'opacity-100'}`}
+        className={`block laptop:hidden min-w-[1140px] h-[1427px] z-0 absolute transition-all duration-1000 ${firstAnimation ? 'opacity-0' : 'opacity-100'}`}
         style={{
           background: 'linear-gradient(to bottom, #00000070 640px, #00000000 880px)'
         }}
       />
 
-      <div className={'h-[1427px] tablet:h-[2284px] w-[100%] relative flex flex-col items-center'}>
+      <div className={'h-[1427px] laptop:h-[2284px] w-[100%] relative flex flex-col items-center'}>
         <div className={'flex flex-col w-[100%] h-[100vh] max-h-[1080px] max-w-[1920px] relative'}>
           <img
             alt={'Calvin head'}
-            className={`hidden tablet:block absolute top-[30px] left-[60px] transition-all duration-1000 ${secondAnimation ? 'opacity-0' : 'opacity-100'}`}
+            className={`hidden laptop:block absolute top-[30px] left-[60px] transition-all duration-1000 ${secondAnimation ? 'opacity-0' : 'opacity-100'}`}
             src={CalvinHeadImage}
           />
 
           <div
-            className={`flex flex-col items-center tablet:items-start tablet:absolute top-0 tablet:ml-[200px] mt-[80px] tablet:mt-[120px] transition-transform duration-1000 transform ${firstAnimation ? '-translate-x-[1000px]' : 'translate-x-0'}`}
+            className={`flex flex-col items-center laptop:items-start laptop:absolute top-0 laptop:ml-[200px] mt-[80px] laptop:mt-[120px] transition-transform duration-1000 transform ${firstAnimation ? '-translate-x-[1000px]' : 'translate-x-0'}`}
           >
             <p
               className={
-                'font-superCool leading-[1.25] text-[32px] tablet:text-[60px] text-[#FCFC03] drop-shadow-[0px_5px_2px_#00000080]'
+                'font-superCool leading-[1.25] text-[32px] laptop:text-[60px] text-[#FCFC03] drop-shadow-[0px_5px_2px_#00000080]'
               }
             >
               Welcome to
@@ -88,7 +88,7 @@ export const AuthTemplate: FC = () => {
 
             <p
               className={
-                'font-superCool leading-[1.25] text-[80px] tablet:text-[180px] text-[#FCFC03] uppercase drop-shadow-[0px_5px_2px_#00000080] tablet:drop-shadow-[0px_10px_2px_#00000080]'
+                'font-superCool leading-[1.25] text-[80px] laptop:text-[180px] text-[#FCFC03] uppercase drop-shadow-[0px_5px_2px_#00000080] laptop:drop-shadow-[0px_10px_2px_#00000080]'
               }
             >
               Trippys
@@ -96,10 +96,10 @@ export const AuthTemplate: FC = () => {
           </div>
 
           <div
-            className={`flex flex-col tablet:absolute tablet:right-[40px] mt-[40px] tablet:h-[calc(100%-80px)] justify-between items-center tablet:items-end transition-opacity duration-1000 ${secondAnimation ? 'opacity-0' : 'opacity-100'}`}
+            className={`flex flex-col laptop:absolute laptop:right-[40px] mt-[40px] laptop:h-[calc(100%-80px)] justify-between items-center laptop:items-end transition-opacity duration-1000 ${secondAnimation ? 'opacity-0' : 'opacity-100'}`}
           >
             <svg
-              className={'hidden tablet:block'}
+              className={'hidden laptop:block'}
               fill={'none'}
               height={'124'}
               viewBox={'0 0 124 124'}
@@ -116,7 +116,7 @@ export const AuthTemplate: FC = () => {
               />
             </svg>
 
-            <div className={'flex flex-row tablet:flex-col gap-[20px] items-center'}>
+            <div className={'flex flex-row laptop:flex-col gap-[20px] items-center'}>
               <a
                 aria-labelledby={'Twitter'}
                 href={'https://twitter.com/TrippysNFT'}
@@ -137,7 +137,7 @@ export const AuthTemplate: FC = () => {
             </div>
 
             <svg
-              className={'hidden tablet:block'}
+              className={'hidden laptop:block'}
               fill={'none'}
               height={'165'}
               viewBox={'0 0 124 165'}
@@ -159,16 +159,16 @@ export const AuthTemplate: FC = () => {
           </div>
 
           <div
-            className={`w-full tablet:w-auto flex flex-col gap-[10px] tablet:gap-[20px] tablet:mt-0 absolute bottom-[80px] tablet:bottom-[80px] tablet:ml-[200px] items-center transition-transform duration-1000 transform ${secondAnimation ? '-translate-x-[500px]' : 'translate-x-0'}`}
+            className={`w-full laptop:w-auto flex flex-col gap-[10px] laptop:gap-[20px] laptop:mt-0 absolute bottom-[80px] laptop:bottom-[80px] laptop:ml-[200px] items-center transition-transform duration-1000 transform ${secondAnimation ? '-translate-x-[500px]' : 'translate-x-0'}`}
           >
             <div
               className={
-                'relative w-[54px] h-[90px] tablet:w-[72px] tablet:h-[120px] flex flex-col items-center border-[2px] tablet:border-[4px] border-[#FCFC03]'
+                'relative w-[54px] h-[90px] laptop:w-[72px] laptop:h-[120px] flex flex-col items-center border-[2px] laptop:border-[4px] border-[#FCFC03]'
               }
             >
               <IoChevronDownSharp
                 className={
-                  'absolute text-[#FCFC03] animate-tablet-float-up-down tablet:animate-float-up-down w-[36px] h-[36px] tablet:w-[48px] tablet:h-[48px]'
+                  'absolute text-[#FCFC03] animate-tablet-float-up-down laptop:animate-float-up-down w-[36px] h-[36px] laptop:w-[48px] laptop:h-[48px]'
                 }
               />
             </div>
@@ -177,7 +177,7 @@ export const AuthTemplate: FC = () => {
           </div>
 
           <p
-            className={`hidden tablet:block absolute w-full text-center bottom-[30px] text-[#FCFC03] font-[500] uppercase font-orbitron transition-opacity duration-1000 transform ${secondAnimation ? 'opacity-0' : 'opacity-100'}`}
+            className={`hidden laptop:block absolute w-full text-center bottom-[30px] text-[#FCFC03] font-[500] uppercase font-orbitron transition-opacity duration-1000 transform ${secondAnimation ? 'opacity-0' : 'opacity-100'}`}
           >
             Trippys on Blast
           </p>
@@ -185,7 +185,7 @@ export const AuthTemplate: FC = () => {
 
         <h2
           className={
-            'absolute w-[320px] tablet:w-[1140px] text-right text-[24px] tablet:text-[40px] text-[#FFFFFF] top-[979px] tablet:top-[1460px]'
+            'absolute w-[320px] laptop:w-[1140px] text-right text-[24px] laptop:text-[40px] text-[#FFFFFF] top-[979px] laptop:top-[1460px]'
           }
         >
           ... The collection that will accompany you on your travels
@@ -193,7 +193,7 @@ export const AuthTemplate: FC = () => {
 
         <h2
           className={
-            'absolute w-[320px] tablet:w-[1140px] text-left text-[24px] tablet:text-[40px] text-[#FFFFFF] top-[1167px] tablet:top-[1980px]'
+            'absolute w-[320px] laptop:w-[1140px] text-left text-[24px] laptop:text-[40px] text-[#FFFFFF] top-[1167px] laptop:top-[1980px]'
           }
         >
           And in your wallet ...
@@ -202,21 +202,21 @@ export const AuthTemplate: FC = () => {
 
       <div
         className={
-          'max-w-[320px] tablet:max-w-[1140px] flex flex-col mt-[80px] tablet:mt-[156px] gap-[40px] tablet:gap-[80px]'
+          'max-w-[320px] laptop:max-w-[1140px] flex flex-col mt-[80px] laptop:mt-[156px] gap-[40px] laptop:gap-[80px]'
         }
       >
-        <h2 className={'text-[#424242] text-[24px] tablet:text-[40px] uppercase'}>
+        <h2 className={'text-[#424242] text-[24px] laptop:text-[40px] uppercase'}>
           Do you already know our avatar Calvin?
         </h2>
 
         <div
           className={
-            'flex flex-col-reverse tablet:flex-row gap-[40px] tablet:gap-[160px] tablet:max-w-[1140px]'
+            'flex flex-col-reverse laptop:flex-row gap-[40px] laptop:gap-[160px] laptop:max-w-[1140px]'
           }
         >
           <p
             className={
-              'text-[#424242] text-justify text-[16px] tablet:text-[20px] leading-[1.5] font-[500]'
+              'text-[#424242] text-justify text-[16px] laptop:text-[20px] leading-[1.5] font-[500]'
             }
           >
             Meet Calvin, the chill NFT Avatar! With his laid-back vibe, slightly squinted eyes, and
@@ -233,7 +233,7 @@ export const AuthTemplate: FC = () => {
 
           <img
             alt={'Road trip illustration with a van, mountains, and text about travel'}
-            className={'w-[320px] tablet:w-[400px] h-[320px] tablet:h-[400px]'}
+            className={'w-[320px] laptop:w-[400px] h-[320px] laptop:h-[400px]'}
             src={CalvinPresentationImage}
           />
         </div>
@@ -241,24 +241,24 @@ export const AuthTemplate: FC = () => {
 
       <div
         className={
-          'flex flex-col items-center bg-gradient-to-b from-[#2F2F2F] via-[#2F2F2F] to-[#000000] w-[100%] pt-[40px] mt-[120px] tablet:mt-[200px]'
+          'flex flex-col items-center bg-gradient-to-b from-[#2F2F2F] via-[#2F2F2F] to-[#000000] w-[100%] pt-[40px] mt-[120px] laptop:mt-[200px]'
         }
       >
         <hr className={'w-[100px] border-[#FCFC03] border-[2px] radius-[40px] rounded-full'} />
 
         <div
           className={
-            'flex flex-col max-w-[320px] tablet:max-w-[1140px] pt-[80px] tablet:pt-[160px] gap-[80px] tablet:gap-[200px] pb-[120px] tablet:pb-[220px]'
+            'flex flex-col max-w-[320px] laptop:max-w-[1140px] pt-[80px] laptop:pt-[160px] gap-[80px] laptop:gap-[200px] pb-[120px] laptop:pb-[220px]'
           }
         >
-          <div className={'flex items-center flex-col gap-[40px] tablet:gap-[80px]'}>
-            <h2 className={'text-[#FCFC03] text-[24px] tablet:text-[40px] text-right w-[100%]'}>
+          <div className={'flex items-center flex-col gap-[40px] laptop:gap-[80px]'}>
+            <h2 className={'text-[#FCFC03] text-[24px] laptop:text-[40px] text-right w-[100%]'}>
               Just trip, what else?
             </h2>
 
             <p
               className={
-                'text-[16px] tablet:text-[20px] text-[#FFFFFF] font-[500] text-justify leading-[1.5]'
+                'text-[16px] laptop:text-[20px] text-[#FFFFFF] font-[500] text-justify leading-[1.5]'
               }
             >
               Trippys NFT is about fun and good vibes, always trying to hit a laugh and sometimes
@@ -266,47 +266,47 @@ export const AuthTemplate: FC = () => {
               bit of psychoactives can show us with the stylish collection pieces. Have fun!!
             </p>
 
-            <div className={'flex flex-col tablet:flex-row gap-[40px] tablet:gap-[120px]'}>
+            <div className={'flex flex-col laptop:flex-row gap-[40px] laptop:gap-[120px]'}>
               <img
                 alt={'Trippys NFT'}
-                className={'w-[320px] tablet:w-[400px] h-[320px] tablet:h-[400px]'}
+                className={'w-[320px] laptop:w-[400px] h-[320px] laptop:h-[400px]'}
                 src={HomeNFT1Image}
               />
 
               <div className={'flex flex-row flex-wrap gap-[40px]'}>
                 <img
                   alt={'Trippys NFT'}
-                  className={'w-[140px] tablet:w-[180px] h-[140px] tablet:h-[180px]'}
+                  className={'w-[140px] laptop:w-[180px] h-[140px] laptop:h-[180px]'}
                   src={HomeNFT2Image}
                 />
 
                 <img
                   alt={'Trippys NFT'}
-                  className={'w-[140px] tablet:w-[180px] h-[140px] tablet:h-[180px]'}
+                  className={'w-[140px] laptop:w-[180px] h-[140px] laptop:h-[180px]'}
                   src={HomeNFT3Image}
                 />
 
                 <img
                   alt={'Trippys NFT'}
-                  className={'w-[140px] tablet:w-[180px] h-[140px] tablet:h-[180px]'}
+                  className={'w-[140px] laptop:w-[180px] h-[140px] laptop:h-[180px]'}
                   src={HomeNFT4Image}
                 />
 
                 <img
                   alt={'Trippys NFT'}
-                  className={'w-[140px] tablet:w-[180px] h-[140px] tablet:h-[180px]'}
+                  className={'w-[140px] laptop:w-[180px] h-[140px] laptop:h-[180px]'}
                   src={HomeNFT5Image}
                 />
 
                 <img
                   alt={'Trippys NFT'}
-                  className={'w-[140px] tablet:w-[180px] h-[140px] tablet:h-[180px]'}
+                  className={'w-[140px] laptop:w-[180px] h-[140px] laptop:h-[180px]'}
                   src={HomeNFT6Image}
                 />
 
                 <img
                   alt={'Trippys NFT'}
-                  className={'w-[140px] tablet:w-[180px] h-[140px] tablet:h-[180px]'}
+                  className={'w-[140px] laptop:w-[180px] h-[140px] laptop:h-[180px]'}
                   src={HomeNFT7Image}
                 />
               </div>
@@ -314,12 +314,12 @@ export const AuthTemplate: FC = () => {
           </div>
 
           <div className={'flex flex-col gap-[80px]'}>
-            <h2 className={'text-[#FFFFFF] text-[24px] tablet:text-[40px] text-center'}>
+            <h2 className={'text-[#FFFFFF] text-[24px] laptop:text-[40px] text-center'}>
               Follow us on Twitter so you don't miss any updates and Set your NFT, until our next
               trip!
             </h2>
 
-            <div className={'flex justify-center md:justify-start gap-[20px] tablet:gap-[40px]'}>
+            <div className={'flex justify-center md:justify-start gap-[20px] laptop:gap-[40px]'}>
               <a
                 aria-labelledby={'Twitter'}
                 href={'https://twitter.com/TrippysNFT'}
@@ -328,7 +328,7 @@ export const AuthTemplate: FC = () => {
               >
                 <img
                   alt={'Twitter'}
-                  className={'w-[50px] tablet:w-[64px] h-[50px] tablet:h-[64px]'}
+                  className={'w-[50px] laptop:w-[64px] h-[50px] laptop:h-[64px]'}
                   src={ButtonDiscordImage}
                 />
               </a>
@@ -341,7 +341,7 @@ export const AuthTemplate: FC = () => {
               >
                 <img
                   alt={'X'}
-                  className={'w-[50px] tablet:w-[64px] h-[50px] tablet:h-[64px]'}
+                  className={'w-[50px] laptop:w-[64px] h-[50px] laptop:h-[64px]'}
                   src={ButtonXImage}
                 />
               </a>
@@ -354,7 +354,7 @@ export const AuthTemplate: FC = () => {
         <img alt={'Trippys on Blast'} className={'w-[100%] h-full'} src={HomeFooterImage} />
 
         <svg
-          className={'hidden tablet:block absolute left-[40px] bottom-[40px]'}
+          className={'hidden laptop:block absolute left-[40px] bottom-[40px]'}
           fill={'none'}
           height={'124'}
           viewBox={'0 0 124 124'}
@@ -372,7 +372,7 @@ export const AuthTemplate: FC = () => {
         </svg>
 
         <svg
-          className={'hidden tablet:block absolute right-[40px] bottom-[40px]'}
+          className={'hidden laptop:block absolute right-[40px] bottom-[40px]'}
           fill={'none'}
           height={'124'}
           viewBox={'0 0 124 124'}
