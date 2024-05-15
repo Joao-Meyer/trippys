@@ -202,7 +202,7 @@ export const AuthTemplate: FC = () => {
 
       <div
         className={
-          'max-w-[320px] tablet:max-w-[1140px] flex flex-col mt-[156px] gap-[40px] tablet:gap-[80px]'
+          'max-w-[320px] tablet:max-w-[1140px] flex flex-col mt-[80px] tablet:mt-[156px] gap-[40px] tablet:gap-[80px]'
         }
       >
         <h2 className={'text-[#424242] text-[24px] tablet:text-[40px] uppercase'}>
