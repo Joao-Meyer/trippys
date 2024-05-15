@@ -1,7 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
 import {
-  ButtonDiscordImage,
-  ButtonXImage,
   CalvinHeadImage,
   CalvinPresentationImage,
   HomeFirstSectionImage,
@@ -15,6 +13,8 @@ import {
   HomeNFT7Image,
   TabletHomeFirstSectionImage
 } from 'main/assets';
+import { FaDiscord } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 import { IoChevronDownSharp } from 'react-icons/io5';
 import { useEffect, useState } from 'react';
 import type { FC } from 'react';
@@ -119,20 +119,26 @@ export const AuthTemplate: FC = () => {
             <div className={'flex flex-row laptop:flex-col gap-[20px] items-center'}>
               <a
                 aria-labelledby={'Twitter'}
-                href={'https://twitter.com/TrippysNFT'}
-                rel={'noreferrer'}
-                target={'_blank'}
-              >
-                <img alt={'Twitter'} src={ButtonDiscordImage} />
-              </a>
-
-              <a
-                aria-labelledby={'X'}
+                className={
+                  'border-[#FCFC03] w-[64px] h-[64px] border-[2px] flex items-center justify-center'
+                }
                 href={'https://discord.gg/p9zGAacTYw'}
                 rel={'noreferrer'}
                 target={'_blank'}
               >
-                <img alt={'X'} src={ButtonXImage} />
+                <FaDiscord color={'#FCFC03'} size={'40px'} />
+              </a>
+
+              <a
+                aria-labelledby={'X'}
+                className={
+                  'border-[#FCFC03] w-[64px] h-[64px] border-[2px] flex items-center justify-center'
+                }
+                href={'https://twitter.com/TrippysNFT'}
+                rel={'noreferrer'}
+                target={'_blank'}
+              >
+                <FaXTwitter color={'#FCFC03'} size={'32px'} />
               </a>
             </div>
 
@@ -159,11 +165,14 @@ export const AuthTemplate: FC = () => {
           </div>
 
           <div
-            className={`w-full laptop:w-auto flex flex-col gap-[10px] laptop:gap-[20px] laptop:mt-0 absolute bottom-[80px] laptop:bottom-[80px] laptop:ml-[200px] items-center transition-transform duration-1000 transform ${secondAnimation ? '-translate-x-[500px]' : 'translate-x-0'}`}
+            className={`w-full laptop:w-auto flex flex-col gap-[10px] laptop:gap-[20px] laptop:mt-0 absolute bottom-[80px] laptop:bottom-[80px] laptop:ml-[200px] items-center transition-transform duration-1000 transform ${secondAnimation ? '-translate-x-[1000px]' : 'translate-x-0'}`}
+            onClick={() =>
+              document.getElementById('about-calvin')?.scrollIntoView({ behavior: 'smooth' })
+            }
           >
             <div
               className={
-                'relative w-[54px] h-[90px] laptop:w-[72px] laptop:h-[120px] flex flex-col items-center border-[2px] laptop:border-[4px] border-[#FCFC03]'
+                'relative w-[54px] h-[90px] laptop:w-[72px] laptop:h-[120px] flex flex-col items-center border-[2px] laptop:border-[4px] border-[#FCFC03] cursor-pointer'
               }
             >
               <IoChevronDownSharp
@@ -202,8 +211,9 @@ export const AuthTemplate: FC = () => {
 
       <div
         className={
-          'max-w-[320px] laptop:max-w-[1140px] flex flex-col mt-[80px] laptop:mt-[156px] gap-[40px] laptop:gap-[80px]'
+          'max-w-[320px] laptop:max-w-[1140px] flex flex-col mt-[80px] laptop:mt-[156px] gap-[40px] laptop:gap-[80px] scroll-mt-[80px] laptop:scroll-mt-[156px]'
         }
+        id={'about-calvin'}
       >
         <h2 className={'text-[#424242] text-[24px] laptop:text-[40px] uppercase'}>
           Do you already know our avatar Calvin?
@@ -322,27 +332,31 @@ export const AuthTemplate: FC = () => {
             <div className={'flex justify-center md:justify-start gap-[20px] laptop:gap-[40px]'}>
               <a
                 aria-labelledby={'Twitter'}
-                href={'https://twitter.com/TrippysNFT'}
+                className={
+                  'border-[#FCFC03] w-[50px] laptop:w-[64px] h-[50px] laptop:h-[64px] border-[2px] flex items-center justify-center'
+                }
+                href={'https://discord.gg/p9zGAacTYw'}
                 rel={'noreferrer'}
                 target={'_blank'}
               >
-                <img
-                  alt={'Twitter'}
-                  className={'w-[50px] laptop:w-[64px] h-[50px] laptop:h-[64px]'}
-                  src={ButtonDiscordImage}
+                <FaDiscord
+                  className={'w-[30px] laptop:w-[40px] h-[30px] laptop:h-[40px]'}
+                  color={'#FCFC03'}
                 />
               </a>
 
               <a
                 aria-labelledby={'X'}
-                href={'https://discord.gg/p9zGAacTYw'}
+                className={
+                  'border-[#FCFC03] w-[50px] laptop:w-[64px] h-[50px] laptop:h-[64px] border-[2px] flex items-center justify-center'
+                }
+                href={'https://twitter.com/TrippysNFT'}
                 rel={'noreferrer'}
                 target={'_blank'}
               >
-                <img
-                  alt={'X'}
-                  className={'w-[50px] laptop:w-[64px] h-[50px] laptop:h-[64px]'}
-                  src={ButtonXImage}
+                <FaXTwitter
+                  className={'w-[24px] laptop:w-[32px] h-[24px] laptop:h-[32px]'}
+                  color={'#FCFC03'}
                 />
               </a>
             </div>
