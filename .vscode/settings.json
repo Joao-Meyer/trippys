@@ -1,7 +1,38 @@
 {
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma-insider",
+    "editor.formatOnSave": true
+  },
   "css.lint.unknownAtRules": "ignore",
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
+    "source.fixAll.eslint": true
   },
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
@@ -11,7 +42,15 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "material-icon-theme.folders.associations": {
     "composite": "Stack",
+    "base-icon": "plugin",
+    "strategy": "api",
+    "store": "redux-store",
     "base-component": "queue",
+    "palette": "theme",
+    "builder": "tools",
+    "proxy": "guard",
+    "form": "mappings",
+    "method": "batch",
     "error-message-constructor": "error",
     "util-type": "typescript",
     "adapter": "scripts",
@@ -39,13 +78,22 @@
     "in-memory": "test"
   },
   "material-icon-theme.files.associations": {
+    "index.ts": "apiblueprint",
     "*.http.ts": "http",
+    "*.schema.ts": "serverless",
+    "*.handler.ts": "h",
+    "*.proxy.ts": "http",
+    "*.palette.json": "renovate",
+    "*.provider.tsx": "parcel",
+    "*.store.ts": "redux-store",
+    "*.icon.ts": "julia",
     "*.base.tsx": "credits",
     "*.composite.ts": "rescript-interface",
     "*.helper.ts": "smarty",
     "*.validation.ts": "conduct",
     "*.builder.ts": "capacitor",
     "*.factory.ts": "tree",
+    "*.hook.ts": "autohotkey",
     "*.enum.ts": "posthtml",
     "*.seed.ts": "disc",
     "*.constant.ts": "posthtml",
@@ -69,25 +117,7 @@
     "server.ts": "serverless"
   },
   "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "typescript.tsserver.experimental.enableProjectDiagnostics": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "workbench.iconTheme": "material-icon-theme",
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
-  "cSpell.words": ["adcs", "Adis", "adpfs", "fiesp", "infralegal"]
+  "workbench.iconTheme": "material-icon-theme"
 }

@@ -35,6 +35,15 @@ export default {
     extend: {
       boxShadow: {
         base: '0px 0px 7px 2px rgba(0,0,0,0.2)'
+      },
+      keyframes: {
+        floatUpDown: {
+          '0%, 100%': { top: 'calc(0% + 4px)' },
+          '65%': { top: 'calc((100% - 48px) - 4px)' }
+        }
+      },
+      animation: {
+        'float-up-down': 'floatUpDown 1.5s ease-in-out infinite'
       }
     },
     fontFamily: {
