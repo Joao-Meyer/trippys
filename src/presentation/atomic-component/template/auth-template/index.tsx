@@ -96,7 +96,7 @@ export const AuthTemplate: FC = () => {
           </div>
 
           <div
-            className={`flex flex-col tablet:absolute tablet:right-[40px] mt-[60px] tablet:h-[calc(100%-80px)] justify-between items-center tablet:items-end transition-opacity duration-1000 ${secondAnimation ? 'opacity-0' : 'opacity-100'}`}
+            className={`flex flex-col tablet:absolute tablet:right-[40px] mt-[40px] tablet:h-[calc(100%-80px)] justify-between items-center tablet:items-end transition-opacity duration-1000 ${secondAnimation ? 'opacity-0' : 'opacity-100'}`}
           >
             <svg
               className={'hidden tablet:block'}
@@ -159,7 +159,7 @@ export const AuthTemplate: FC = () => {
           </div>
 
           <div
-            className={`w-full flex flex-col gap-[10px] tablet:gap-[20px] tablet:mt-0 absolute bottom-[80px] tablet:bottom-[80px] tablet:ml-[200px] items-center transition-transform duration-1000 transform ${secondAnimation ? '-translate-x-[500px]' : 'translate-x-0'}`}
+            className={`w-full tablet:w-auto flex flex-col gap-[10px] tablet:gap-[20px] tablet:mt-0 absolute bottom-[80px] tablet:bottom-[80px] tablet:ml-[200px] items-center transition-transform duration-1000 transform ${secondAnimation ? '-translate-x-[500px]' : 'translate-x-0'}`}
           >
             <div
               className={
@@ -177,7 +177,7 @@ export const AuthTemplate: FC = () => {
           </div>
 
           <p
-            className={`hidden tablet:block absolute w-full text-center bottom-[30px] text-[#FCFC03] font-[600] uppercase font-orbitron transition-opacity duration-1000 transform ${secondAnimation ? 'opacity-0' : 'opacity-100'}`}
+            className={`hidden tablet:block absolute w-full text-center bottom-[30px] text-[#FCFC03] font-[500] uppercase font-orbitron transition-opacity duration-1000 transform ${secondAnimation ? 'opacity-0' : 'opacity-100'}`}
           >
             Trippys on Blast
           </p>
@@ -370,12 +370,6 @@ export const AuthTemplate: FC = () => {
             strokeWidth={'4'}
           />
         </svg>
-
-        <p
-          className={`hidden tablet:block absolute w-full text-center bottom-[30px] text-[#FCFC03] font-[600] uppercase font-orbitron transition-opacity duration-1000 transform ${secondAnimation ? 'opacity-0' : 'opacity-100'}`}
-        >
-          Trippys on Blast
-        </p>
 
         <svg
           className={'hidden tablet:block absolute right-[40px] bottom-[40px]'}
