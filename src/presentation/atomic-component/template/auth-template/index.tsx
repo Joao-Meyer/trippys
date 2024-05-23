@@ -118,7 +118,7 @@ export const AuthTemplate: FC = () => {
 
             <div className={'flex flex-row laptop:flex-col gap-[20px] items-center'}>
               <a
-                aria-labelledby={'Twitter'}
+                aria-labelledby={'X'}
                 className={
                   'border-[#FCFC03] w-[64px] h-[64px] border-[2px] flex items-center justify-center'
                 }
@@ -325,13 +325,12 @@ export const AuthTemplate: FC = () => {
 
           <div className={'flex flex-col gap-[80px]'}>
             <h2 className={'text-[#FFFFFF] text-[24px] laptop:text-[40px] text-center'}>
-              Follow us on Twitter so you don't miss any updates and Set your NFT, until our next
-              trip!
+              Follow us on X so you don't miss any updates and Set your NFT, until our next trip!
             </h2>
 
             <div className={'flex justify-center md:justify-start gap-[20px] laptop:gap-[40px]'}>
               <a
-                aria-labelledby={'Twitter'}
+                aria-labelledby={'X'}
                 className={
                   'border-[#FCFC03] w-[50px] laptop:w-[64px] h-[50px] laptop:h-[64px] border-[2px] flex items-center justify-center'
                 }
